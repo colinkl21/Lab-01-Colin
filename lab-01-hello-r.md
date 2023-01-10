@@ -42,11 +42,6 @@ dino_data %>%
 
 ### Exercise 3
 
-Add code and narrative as needed. Note that the R chunks are labeled
-with `plot-star` and `cor-star` to provide spaces to place the code for
-plotting and calculating the correlation coefficient. To finish, clean
-up the narrative by removing these instructions.
-
 ``` r
 star_data <- datasaurus_dozen %>%
   filter(dataset == "star")
@@ -66,6 +61,9 @@ star_data %>%
     ##         r
     ##     <dbl>
     ## 1 -0.0630
+
+Answer: star correlation (-.0630) and dino correlation (-.0645) are
+almost the same
 
 ### Exercise 4
 
