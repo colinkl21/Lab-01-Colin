@@ -14,17 +14,11 @@ library(datasauRus)
 
 ### Exercise 1
 
-\#1846 rows and 3 variables/columns \#variables are dataset, x, and y
+1846 rows and 3 variables/columns variables are dataset, x, and y
 
 datasaurus_dozen %\>% count(dataset) %\>% print(13) \#12 datasets
 
 ### Exercise 2
-
-The answers for this exercise are given for you below. But you should
-clean up some of the narrative so that it only includes what you want to
-turn in.
-
-First let’s plot the data in the dino dataset:
 
 ``` r
 dino_data <- datasaurus_dozen %>%
@@ -35,8 +29,6 @@ ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
 ```
 
 ![](lab-01-hello-r_files/figure-gfm/plot-dino-1.png)<!-- -->
-
-And next calculate the correlation between `x` and `y` in this dataset:
 
 ``` r
 dino_data %>%
