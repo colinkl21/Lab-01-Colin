@@ -2,7 +2,12 @@
 title: "Lab 01 - Hello R"
 author: "Colin"
 date: "1-10-2023"
-output: github_document
+output: 
+  html_document: 
+    highlight: monochrome
+    theme: cerulean
+    fig_width: 10
+    fig_height: 6
 ---
 
 ## Load packages and data
@@ -16,18 +21,12 @@ library(datasauRus)
 
 ### Exercise 1
 
-1846 rows and 3 variables/columns
+1846 rows and 3 variables/columns 
 variables are dataset, x, and y
 
-
-datasaurus_dozen %>%
-  count(dataset) %>%
-  print(13)
-#12 datasets
-
+datasaurus_dozen %\>% count(dataset) %\>% print(13) #12 datasets
 
 ### Exercise 2
-
 
 ```{r plot-dino, fig.height=3, fig.width=6}
 dino_data <- datasaurus_dozen %>%
@@ -37,14 +36,12 @@ ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
 
-
 ```{r cor-dino}
 dino_data %>%
   summarize(r = cor(x, y))
 ```
 
 ### Exercise 3
-
 
 ```{r plot-star, fig.height=3, fig.width=6}
 star_data <- datasaurus_dozen %>%
@@ -58,6 +55,7 @@ ggplot(data = star_data, mapping = aes(x = x, y = y)) +
 star_data %>%
   summarize(r = cor(x, y))
 ```
+
 Answer: star correlation (-.0630) and dino correlation (-.0645) are almost the same, .0015 difference
 
 ### Exercise 4
@@ -77,7 +75,6 @@ circle_data %>%
 
 Answer: circle correlation (-.0683) and dino correlation (-.0645) are almost the same, .0038 difference
 
-
 ### Exercise 5
 
 ```{r}
@@ -93,4 +90,3 @@ datasaurus_dozen %>%
   summarize(r = cor(x, y)) %>%
   print(13)
 ```
-
