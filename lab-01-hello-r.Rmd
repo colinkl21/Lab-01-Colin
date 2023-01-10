@@ -58,7 +58,7 @@ ggplot(data = star_data, mapping = aes(x = x, y = y)) +
 star_data %>%
   summarize(r = cor(x, y))
 ```
-Answer: star correlation (-.0630) and dino correlation (-.0645) are almost the same
+Answer: star correlation (-.0630) and dino correlation (-.0645) are almost the same, .0015 difference
 
 ### Exercise 4
 
@@ -74,6 +74,9 @@ ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
 circle_data %>%
   summarize(r = cor(x, y))
 ```
+
+Answer: circle correlation (-.0683) and dino correlation (-.0645) are almost the same, .0038 difference
+
 
 ### Exercise 5
 

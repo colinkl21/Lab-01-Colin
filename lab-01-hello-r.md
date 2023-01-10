@@ -63,7 +63,7 @@ star_data %>%
     ## 1 -0.0630
 
 Answer: star correlation (-.0630) and dino correlation (-.0645) are
-almost the same
+almost the same, .0015 difference
 
 ### Exercise 4
 
@@ -86,6 +86,9 @@ circle_data %>%
     ##         r
     ##     <dbl>
     ## 1 -0.0683
+
+Answer: circle correlation (-.0683) and dino correlation (-.0645) are
+almost the same, .0038 difference
 
 ### Exercise 5
 
