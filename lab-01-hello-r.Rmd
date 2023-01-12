@@ -3,11 +3,11 @@ title: "Lab 01 - Hello R"
 author: "Colin"
 date: "1-10-2023"
 output: 
-  html_document: 
-    highlight: monochrome
-    theme: cerulean
-    fig_width: 10
-    fig_height: 6
+  github_document: 
+   # highlight: monochrome
+    #theme: cerulean
+    #fig_width: 10
+    #fig_height: 6
 ---
 
 ## Load packages and data
